@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title> Naruto - Grid e Flex </title>
+</head>
+<body>
+        <header>
+                <img class="logo" src="./imagens/Naruto_logo.svg.png" alt="Logo">
+            
+
+                
+                <!--
+                <div class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="#">Quem somos?</a>
+                    <a href="contato.html">Contato</a>
+    
+                </div>
+                -->
+
+        </header>
+
+        <section  style="width: 100%;">
+            <div class="infos">
+                <div style="padding: 10px;">
+                    <p>Sobre o <strong> Naruto</strong></p>
+                   <br>
+                    <p id="text"> Naruto Uzumaki (うずまきナルト Uzumaki Naruto) é um personagem 
+                        fictício da franquia de mangá e anime Naruto.</p>
+                </div>
+    
+                <div>
+                    <img class="capa"
+                    id="capa" 
+                    src="./imagens/naruto1.jpg">
+                </div>
+            </div>
+
+            <div class="infos2">
+
+                <div>
+                    <img class="capa2"
+                    id="capa2" 
+                    src="./imagens/sasuke.jpg">
+                </div>
+                
+                <div style="padding: 10px;">
+                    <p >Sobre o <strong> Sasuke</strong></p>
+                   <br>
+                    <p id="text2">  Na história fictícia da série, Sasuke é membro 
+                        do clã Uchiha, que era uma habilidosa família de ninjas da Vila Oculta da Folha.</p>
+                </div>
+    
+
+            </div>
+        </section>
+
+
+        <footer>
+            <h4 style="text-align: center;">
+                Feito por João Duarte
+            </h4>
+        </footer>
+
+
+        <script>
+           
+           const img = document.getElementById('capa');
+           const text = document.getElementById('text');
+
+                      
+           const img2 = document.getElementById('capa2');
+           const text2 = document.getElementById('text2');
+
+
+           let toggle = true;
+           img.addEventListener('click', function(){
+            toggle = !toggle;
+            if(toggle){
+                img.src = 'imagens\\naruto1.jpg' 
+                text.innerHTML = " Naruto Uzumaki (うずまきナルト Uzumaki Naruto) é um personagem fictício da franquia de mangá e anime Naruto."
+
+
+            } else{
+                img.src = 'imagens\\capa-na.jpg' 
+                text.innerText = "Naruto como um sennin. Um Eremita (仙人, せんにん), é alguém que é capaz de utilizar senjutsu (仙術, せんじゅつ; literalmente significa: 'Feitiçaria'. "
+            }
+
+           })
+
+           img2.addEventListener('click', function(){
+            toggle = !toggle;
+            if(toggle){
+                img2.src = 'imagens\\sasuke.jpg' 
+                text2.innerHTML = " Na história fictícia da série, Sasuke é membro do clã Uchiha, que era uma habilidosa família de ninjas da Vila Oculta da Folha."
+
+
+            } else{
+                img2.src = 'imagens\\sasuke-sharingan-rinnegan.jpg' 
+                text2.innerText = "O Rinnegan é um Kekkei Genkai — técnica limitada à herança sanguínea — passado entre gerações do clã Otsutsuki."
+            }
+
+           })
+
+
+        </script>
+
+</body>
+</html>
