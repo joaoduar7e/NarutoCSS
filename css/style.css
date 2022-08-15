@@ -29,6 +29,7 @@ header > div {
 .logo{
     max-width: 15%;
     display: block;
+    min-width: 100px;
 }
 
 .nav {
@@ -55,6 +56,9 @@ header > div {
 .capa, .capa2{
     max-width: 100%;
     display: block;
+    object-fit: cover; 
+    object-position: bottom;
+    min-width: 100px;
 }
 
 .infos2{
